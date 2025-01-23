@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="node_modules/bootstrap/scss/custom.css"/>
+    <link rel="stylesheet" href="CSS/Header&Footer.css" />
+    <link rel="stylesheet" href="CSS/home-partners.css" />
+    <link rel="stylesheet" href="CSS/screens-swiper.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> <!--mobile swiper css cdn-->
+    <title>Barq Innovation</title>
+  </head>
+  <body>
+    <nav class="navbar p-3 fixed-top mt-4 mx-auto w-75 border d-flex align-items-center "  id="header">
+      <div class="container container-lg">
+        <a class="navbar-brand" href="#">
+          <img class="mainLogoImg" src="Logos/colored.png">
+        </a>
+        <button class="navbar-toggler rounded-4 border-0 border-none " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+          <div class="container conatiner-fluid  my-2  d-xl-flex align-items-center flex-wrap justify-content-between " id="navLinks">
+            <a class=" nav-link active" aria-current="page" href="#"><i class="bi bi-house me-1"></i>Home</a>
+            <a class=" nav-link" href="#"><i class="bi bi-people me-1"></i>About</a>
+            <a class=" nav-link" href="#"><i class="bi bi-gear me-1"></i>Service</a>
+            <a class=" nav-link" href="#"><i class="bi bi-code-slash me-1"></i>Our Work</a>
+            <a class=" nav-link" href="#"><i class="bi bi-headset me-1"></i>Contact</a>
+            <a class=" nav-link" href="#"><i class="bi bi-person-plus me-1"></i>Internships & Careers</a>
+            <button class=" btn " id="themeSwitchBtn"><i class="bi  fs-4" title="Switch To dark Mood" ></i></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <button type="button" id="toTop" class="btn btn-primary rounded-pill position-fixed bottom-0 end-0 m-5 z-3 shadow d-none" id="backToTop" style="width:clamp(50px , 11dvw, 70px); aspect-ratio: 1/1;">
+      <i class="bi bi-arrow-up text-white fs-2 fw-bold"></i>
+    </button>
+      <div class="home-sec d-grid justify-content-center  bg-white-dark position-relative"style="min-height: 100dvh; padding-top: 11rem;" >
+        <div class="title text-center text-wrap">
+          <i class="bi bi-lightning-charge-fill position-absolute top-0 start-0 m-5 text-primary-changed opacity-50" style="font-size: 6rem; rotate: 5deg;"></i>
+          <i class="bi bi-cpu position-absolute bottom-0 end-0 m-5 text-primary-changed opacity-50 d-none d-md-block" style="font-size: 6rem; rotate: 5deg;"></i>
+          <h1 class="text-primary text-uppercase mb-3 mx-3">welcome to our World </h1>
+          <p class="text-info-white w-75 mx-auto d-none d-md-block z-3">Where power meets speed, and innovation drives change. At <span class="text-primary">Barq Innovations</span>, we ignite ideas with lightning-fast precision, creating solutions that empower you to stay ahead in a rapidly evolving world. Experience the future, today.</p>
+          <p class="text-info-white w-75 mx-auto d-md-none  ">Power, speed, and innovation combined.  At <span class="text-primary">Barq Innovations</span>, we deliver cutting-edge solutions to keep you ahead.</p>
+        </div>
+        <div class="container-fluid">
+          <img src="imgs/home-desktop.png" class="w-75 mx-auto d-none d-md-block mt-3 animation-autoShow-float " alt="home-desktop" >
+          <img src="imgs/home-mobile.png" class="w-100 mx-auto d-md-none animation-autoShow-float" alt="home-mobile" >
+        </div>
+    </div>
+    <div class="brief-sec py-5 px-3 position-relative">
+      <i class="bi bi-briefcase position-absolute top-0 start-0 m-5 text-primary-changed opacity-50" style="font-size: 7.5rem; rotate: -10deg;"></i>
+      <i class="bi bi-gear position-absolute bottom-0 end-0 m-5 text-primary-changed opacity-50 d-none d-md-block" style="font-size: 7rem; rotate: 15deg;"></i>
+      <div class="title text-center mb-4">
+        <h1 class="text-primary text-capitalize"><img class="mainLogo m-0" src="Logos/colored.png" style="height: 6rem;">In brief</h1>
+      </div>
+      <div class="container brief position-relative">
+        <div class="brief-card row row-cols-1 rounded-3 z-2 my-3 bg-WD border-primary-changed p-0 align-items-center shadow animation-scrollShow-up">
+          <div class="col col-lg-8 col-text p-3 px-4">
+            <p class="text-info-white fs-6  lh-lg ">Barq is a technology company dedicated to providing innovative solutions that drive business growth. We focus on enhancing user experience and performance through advanced, tailored tech solutions. Our mission is to help businesses become more efficient, save time, and thrive in the digital world</p>
+          </div>
+          <div class="col col-lg-4 col-img p-0 h-100 ">
+            <img src="imgs/brand-company.png" class="w-100 h-100 rounded-3 border-primary-changed" alt="brand-company">
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="services-sec  p-5 position-relative text-md-center">
+      <div class="title text-center mb-4">
+        <h1 class="text-primary text-capitalize"><img class="mainLogo m-0" src="Logos/colored.png" style="height: 6rem;">services</h1>
+      </div>
+      <div class="container services position-relative w-100 ">
+        <div class="row row-cols-1 row-cols-md-2 gap-3">
+          <img src="imgs/animations/app-development.gif" class=" animation-scrollShow-up col col-12 col-md-6 col-lg-3 " alt="app-development" style="filter: drop-shadow(0 0 0.75rem white);">
+          <div class="col col-text py-5 px-0 text-md-start">
+          <h2 class="text-capitalize text-primary animation-scrollShow-left">mobile app development</h2>
+          <p class="text-info-white fs-6 lh-lg mt-4 animation-scrollShow-up">We create mobile apps that are fast, secure, and easy to use. Our team of experts will work with you to develop a custom app that meets your needs and exceeds your expectations. Whether you need an app for iOS, Android, or both, we have the skills and experience to deliver a high-quality product that will help you reach your goals.</p>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 column-gap-5 d-flex flex-wrap-reverse align-items-center">
+          <div class="col col-text py-5 px-0 ms-auto text-md-end">
+          <h2 class="text-capitalize text-primary animation-scrollShow-right">web app development</h2>
+          <p class="text-info-white fs-6 lh-lg mt-4 animation-scrollShow-up">We build responsive websites that are optimized for speed and performance. Our team of developers will work with you to create a custom website that meets your needs and helps you achieve your business goals. Whether you need a simple landing page or a complex e-commerce site, we have the skills and experience to deliver a high-quality product that will help you stand out from the competition.</p>
+          </div>
+          <img src="imgs/animations/web-development.gif" class=" animation-scrollShow-up col col-12 col-md-6 col-lg-3 " alt="app-development" style="filter: drop-shadow(0 0 0.75rem white);">
+        </div>
+      </div>
+    </div>
+    <div class="screens-sec  p-5 position-relative">
+      <div class="title text-center mb-4">
+        <h1 class="text-primary text-capitalize">Quick view on<img class="mainLogo m-0" src="Logos/colored.png" style="height: 6rem;">screens</h1>
+      </div>
+      <div class="container select-device position-relative">
+        <label for="toggle" class="toggle-label">
+          <input class="circle" id="toggle" name="toggle" type="checkbox" />
+        </label>
+        
+      </div>
+      <div class="container col-12 col-md-10 col-lg-8 col-xl-6 mx-auto my-5 position-relative laptop-screens">
+        <img src="imgs/screen-mockups/mobile.png">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-danger"></div>
+            <div class="swiper-slide bg-info"></div>
+            <div class="swiper-slide bg-primary"></div>
+            <div class="swiper-slide bg-success"></div>
+            <div class="swiper-slide bg-dark"></div>
+          </div>
+        </div>
+          <div class="swiper-button-next text-primary"></div>
+          <div class="swiper-button-prev text-primary"></div>
+      </div>
+      <div class="container col-12 col-md-10 col-lg-8 col-xl-6 mx-auto my-5 position-relative mobile-screens">
+        <img src="imgs/screen-mockups/mobile.png">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-danger"></div>
+            <div class="swiper-slide bg-info"></div>
+            <div class="swiper-slide bg-primary"></div>
+            <div class="swiper-slide bg-success"></div>
+            <div class="swiper-slide bg-dark"></div>
+          </div>
+        </div>
+          <div class="swiper-button-next text-primary"></div>
+          <div class="swiper-button-prev text-primary"></div>
+      </div>
+    </div>
+    <div class="partners-sec  p-5 position-relative">
+      <div class="title text-center mb-4">
+        <h1 class="text-primary text-capitalize"><img class="mainLogo m-0" src="Logos/colored.png" style="height: 6rem;">partners</h1>
+      </div>
+      <div class="slider mt-5 col-12" style="--item-height:10dvh; --quantity:6;">
+        <div class="item" style="--position:1;"><img src="imgs/partners/SVGs/disney.svg"></div>
+        <div class="item" style="--position:2;"><img src="imgs/partners/SVGs/noon.svg"></div>
+        <div class="item" style="--position:3;"><img src="imgs/partners/SVGs/amazon.svg"></div>
+        <div class="item" style="--position:4;"><img src="imgs/partners/SVGs/shahid.svg"></div>
+        <div class="item" style="--position:5;"><img src="imgs/partners/SVGs/zoom.svg"></div>
+        <div class="item" style="--position:6;"><img src="imgs/partners/SVGs/talabat.svg"></div>
+      </div>
+    </div>
+    <script src="JS/Header&Footer.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const swiper = new Swiper('.swiper', {
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+  </script>
+  </body>
+  </html>
+  <!-- <footer class="footer" id="footer">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 justify-content-center py-4  row-gap-4 ">
+        <div class="col col-lg-2 d-grid d-md-block justify-content-center ">
+          <img class="mainLogoImg mb-4" src="Logos/colored.png">
+          <div class="row row-cols-4 w-75 mx-auto mx-md-0 social ps-2 text-primary-changed">
+            <div class="col"><i class="bi bi-facebook"></i></div>
+            <div class="col"><i class="bi bi-instagram"></i></div>
+            <div class="col"><i class="bi bi-linkedin"></i></div>
+            <div class="col"><i class="bi bi-twitter-x"></i></div>
+          </div>
+        </div>
+        <div class="col col-lg-5 py-3 d-flex justify-content-center align-items-start">
+          <div class="phone-call d-grid justify-content-center mx-auto mx-md-0 text-primary-changed ">
+            <i class="bi bi-phone fs-1 mx-auto"></i>
+            <div class="phone-number row gap-2 text-center">
+              <p class="m-0"><a href="tel:+201122665510" class="text-primary-changed">+20 112 266 5510</a></p>
+              <p class="m-0"><a href="tel:+201122665510" class="text-primary-changed">+20 102 222 6599</a></p>
+            </div>
+          </div><div class="phone-call d-grid justify-content-center mx-auto mx-md-0 text-primary-changed ">
+            <i class="bi bi-envelope fs-1 mx-auto"></i>
+            <div class="phone-number row gap-2 text-center">
+              <p class="m-0"><a href="mailto:info@hadafsolutions.net" class="text-primary-changed">info@hadafsolutions.net</a></p>
+            </div>
+          </div>
+        </div>
+          <div class="col bg-succes text-dark col-lg-5">
+            <div class="maps p-2 d-grid justify-content-center mx-auto mx-md-0 text-primary-changed"> 
+              <div class="phone-call d-grid justify-content-center mx-auto mx-md-0 text-primary-changed ">
+                <i class="bi bi-phone fs-1 mx-auto"></i>
+                <div class="phone-number row gap-2 text-center">
+                  <p class="m-0"><a href="tel:+201122665510" class="text-primary-changed">+20 112 266 5510</a></p>
+                  <p class="m-0"><a href="tel:+201122665510" class="text-primary-changed">+20 102 222 6599</a></p>
+                </div>
+              </div><div class="phone-call d-grid justify-content-center mx-auto mx-md-0 text-primary-changed ">
+                <i class="bi bi-envelope fs-1 mx-auto"></i>
+                <div class="phone-number row gap-2 text-center">
+                  <p class="m-0"><a href="mailto:info@hadafsolutions.net" class="text-primary-changed">info@hadafsolutions.net</a></p>
+                </div>
+              </div>               
+          </div>
+        </div>
+        <div class="col text-center">
+          end @ 2025
+        </div>
+    </div>
+  </footer> -->

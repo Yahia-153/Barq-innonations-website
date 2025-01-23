@@ -1,0 +1,76 @@
+.animation-autoShow{
+    animation: autoShowAnimation 2s ease ;
+}
+.animation-autoShow-float{
+    animation: autoShowAnimation 2.5s ease , floatAnimation 3s linear infinite;
+}
+.animation-scrollShow-right{
+    animation: scrollShowRightAnimation linear both;
+    animation-timeline: view(40% auto);
+}
+.animation-float{
+    animation: floatAnimation 2.5s linear infinite;
+}
+.animation-scrollShow-up{
+    animation: scrollShowUpAnimation ease both;
+    animation-timeline: view(80% 25%);
+}
+.animation-scrollShow-left{
+    animation: scrollShowLeftAnimation linear both;
+    animation-timeline: view(40% auto);
+}
+@keyframes autoShowAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatAnimation {
+    0%,100% {
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(-5px);
+    }
+    75%{
+        transform: translateY(5px);
+    }
+    
+}
+
+@keyframes scrollShowUpAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scrollShowLeftAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes scrollShowRightAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

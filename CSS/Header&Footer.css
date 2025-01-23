@@ -1,0 +1,101 @@
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+@import '../Fonts/Mochiy/Mochiy.css' ; /* Fonts */
+@import 'animations.css'; /* Animations */
+:root{
+    /* WD = White & Dark Transfare */
+    --WD:light-dark(/*rgba(3, 18, 43 ,.01)*/rgba(255, 255, 255, .5), rgba(255, 255, 255, .4));
+    --main-font: 'Neometric Regular'; 
+    --primary: #FABE02;    
+    --success: #2E8B57;      
+    --info: #7A8C98;          
+    --warning: #FFD700;       
+    --danger: #C64242;        
+    --secondary: #2A3F44;     
+    --dark: #03122B; 
+    --light: #FFF9E6; 
+    --bg-color:light-dark(var(--light) , var(--dark));
+    --text-primary-changed:light-dark(var(--primary), white );
+}
+*{
+    transition: all 0.025s ease;
+    &::selection{
+        background:var(--primary) ;
+        color: white;
+    }
+}
+.bg-light-dark{
+    background: light-dark(var(--light), var(--dark));
+}
+.bg-white-dark{
+    background: light-dark(white, var(--dark));
+}
+.bg-WD{
+    background: var(--WD);
+}
+.border-primary-changed{
+    border: 1px solid var(--text-primary-changed);
+}
+body{
+    font-family: 'mochiy'; 
+    background-color:light-dark(white, var(--dark));
+    .text-primary-changed{
+        color: var(--text-primary-changed);
+    }
+    .text-info-white{
+        color: light-dark(var(--info), white);
+    }
+    .mainLogoImg{
+        content: url('../Logos/colored.png');
+    }
+    &[data-bs-theme="dark"]{
+      .mainLogoImg {
+        content: url('../Logos/white.png');
+      }
+    }
+    
+    .border-none {
+        border: none !important;
+        box-shadow: none !important;
+      }
+      
+      .border-none:focus {
+        border: none !important;
+        box-shadow: none !important;
+      }
+    .navbar{
+        backdrop-filter: opacity(.2);
+        border-radius: 3rem;
+        backdrop-filter: blur(5px);
+        .container{
+             /* background-color: var(--WD); */
+            .navbar-brand{
+                img{
+                    height: 70px;
+                }
+            }
+        }
+            .collapse{
+                .container{
+                    .nav-link{
+                        width:fit-content;
+                        &.active{
+                            color: var(--text-primary-changed);
+                            border-bottom: 1px solid ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        background-color: var(--WD);
+        .container{
+            .row{
+                .col{
+                    .mainLogoImg{
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }

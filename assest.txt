@@ -1,0 +1,8 @@
+https://coolors.co/palette/00daaa-072466-fcffff
+
+#main-colors{
+    
+    #072466
+    #fcffff
+}
+https://mockups-design.com/

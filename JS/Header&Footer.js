@@ -46,23 +46,23 @@ themeSwitchBtn.addEventListener('click', () => {
 }
 theme()
 // //* HEADER TRANSITION FUNCTION ;
-// function headerTransition() {
-//     const header = document.querySelector("#header");
-//     let lastScroll = 0;
-//     // console.log(header);
-//     window.addEventListener('scroll', () => {
-//         const currentScroll = window.scrollY;
-//         if (currentScroll > lastScroll) {
-//             //scroll down
-//             header.classList.add('hide');
-//         } else {
-//             //scroll up
-//             header.classList.remove('hide');
-//         }
-//         lastScroll = currentScroll;
-//     })
-// }
-// headerTransition()
+function headerTransition() {
+    const header = document.querySelector("#navbar");
+    let lastScroll = 0;
+    // console.log(header);
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.scrollY;
+        if (currentScroll > lastScroll) {
+            //scroll down
+            header.style="top:-50%";
+        } else {
+            //scroll up
+            header.style="top:0px";
+        }
+        lastScroll = currentScroll;
+    })
+}
+headerTransition()
 //* SCROLL TO TOP FUNCTION ;
 function scrollToTop() {
     const scrollBtn = document.querySelector('#toTop');

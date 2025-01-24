@@ -1,6 +1,6 @@
 @import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
-@import '../Fonts/Mochiy/Mochiy.css' ; /* Fonts */
 @import 'animations.css'; /* Animations */
+@import '../Fonts/Mochiy/Mochiy.css' ; /* Fonts */
 :root{
     /* WD = White & Dark Transfare */
     --WD:light-dark(/*rgba(3, 18, 43 ,.01)*/rgba(255, 255, 255, .5), rgba(255, 255, 255, .4));
@@ -17,7 +17,7 @@
     --text-primary-changed:light-dark(var(--primary), white );
 }
 *{
-    transition: all 0.025s ease;
+    transition: all .025s linear;
     &::selection{
         background:var(--primary) ;
         color: white;
@@ -36,21 +36,25 @@
     border: 1px solid var(--text-primary-changed);
 }
 body{
+    padding-top: 11rem;
+    min-height: 200dvh;
     font-family: 'mochiy'; 
     background-color:light-dark(white, var(--dark));
+
     .text-primary-changed{
         color: var(--text-primary-changed);
     }
     .text-info-white{
         color: light-dark(var(--info), white);
     }
+
     .mainLogoImg{
         content: url('../Logos/colored.png');
     }
     &[data-bs-theme="dark"]{
-      .mainLogoImg {
-        content: url('../Logos/white.png');
-      }
+        .mainLogoImg {
+          content: url('../Logos/white.png');
+        }
     }
     
     .border-none {
@@ -79,10 +83,15 @@ body{
                 .container{
                     .nav-link{
                         width:fit-content;
+                        margin-bottom: 1px;
+                        padding: 5px;
                         &.active{
                             color: var(--text-primary-changed);
                             border-bottom: 1px solid ;
+                            margin-bottom: 0;
                         }
+                        
+
                     }
                 }
             }

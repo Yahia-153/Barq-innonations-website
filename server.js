@@ -33,3 +33,4 @@ app.listen(PORT, () => {
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+module.exports = app;

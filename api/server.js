@@ -34,7 +34,5 @@ app.listen(PORT, () => {
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 module.exports = app;
-module.exports = (req, res) => {
-  res.json({ message: 'Server is running!' });
-};
+
 

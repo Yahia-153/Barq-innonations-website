@@ -14,7 +14,7 @@ app.use((req, res, next) => {
 });
 app.options('*', cors());
 app.get('', (req, res) => {
-  const directoryPath = path.join(__dirname, 'imgs/team');
+  const directoryPath = path.join(__dirname, 'team');
   fs.readdir(directoryPath, (err, files) => {
     if (err) {
       return res.status(500).json({ error: 'Failed to read directory' });

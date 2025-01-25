@@ -15,9 +15,6 @@ fetch('http://localhost:3000/')
   .then((folders) => {
     const folderList = document.getElementById('folder-list');
     folders.forEach((folder) => {
-      const li = document.createElement('li');
-      li.textContent = folder;
-      folderList.appendChild(li);
       foldersName.push(folder);
     });
     const li = document.createElement('li');

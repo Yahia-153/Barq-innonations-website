@@ -1,0 +1,21 @@
+.team-member{
+    position: relative;
+    img{
+      transition:all 0.3s;
+      aspect-ratio: 1/1;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+    }
+    .hover{
+      position: absolute;
+      opacity: 0;
+    }
+  }
+  .team-member:hover {
+    img.hover{
+      opacity: 1;
+      position: absolute;
+    }
+    
+  }

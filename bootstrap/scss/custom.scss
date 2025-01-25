@@ -1,0 +1,15 @@
+// Import Bootstrap functions first
+@import "_functions.scss";
+
+// Override Bootstrap variables before the main Bootstrap import
+$primary: #FABE02;  
+$success: #2E8B57;    
+$info: #7A8C98;       
+$warning: #FFD700;      
+$danger: #C64242;      
+$secondary: #1E3C47;   
+$dark: #041836;         
+$light: #FFF9E6;     
+
+// Import Bootstrap's core styles
+@import "bootstrap.scss";

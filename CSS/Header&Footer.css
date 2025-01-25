@@ -36,7 +36,7 @@
     border: 1px solid var(--text-primary-changed);
 }
 .btn-outline-primary{
-    &:hover{
+    &:hover {
         color: white;
     }
 }

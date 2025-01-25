@@ -22,7 +22,7 @@ fetchTeamData()
         folderPath: folderPath
     }
     let memberCard = `
-        <div class="col-3 p-0 card team-member text-start bg-white-dark">
+        <div class="col-3 p-0 card team-member text-start bg-white-dark shadow">
             <img src="${memberObj.folderPath}/main.png" class="card-img-top">
             <img src="${memberObj.folderPath}/hover.png" class="card-img-top hover">
             <div class="card-body">

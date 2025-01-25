@@ -35,6 +35,11 @@
 .border-primary-changed{
     border: 1px solid var(--text-primary-changed);
 }
+.btn-outline-primary{
+    &:hover{
+        color: white;
+    }
+}
 body{
     padding-top: 11rem;
     min-height: 200dvh;

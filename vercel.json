@@ -1,0 +1,12 @@
+{
+    "functions": {
+      "api/**/*.js": {
+        "cors": {
+          "allowMethods": ["GET", "POST", "OPTIONS"],
+          "allowHeaders": ["Content-Type", "Authorization"],
+          "allowOrigin": "*"
+        }
+      }
+    }
+  }
+  

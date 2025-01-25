@@ -1,10 +1,11 @@
-const express = require('express');
 const cors = require('cors');
+const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const app = express();
-app.use(cors());
 const PORT = 3000;
+
+app.use(cors());
 
 app.get('', (req, res) => {
   const directoryPath = path.join(__dirname, 'imgs/team');
@@ -23,3 +24,6 @@ app.get('', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));

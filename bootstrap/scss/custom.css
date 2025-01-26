@@ -30,6 +30,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #FABE02;
+  --bs-primary-changed:light-dark(var(--bs-primary), white);
   --bs-secondary: #1E3C47;
   --bs-success: #2E8B57;
   --bs-info: #7A8C98;
@@ -2214,9 +2215,9 @@ progress {
   line-height: 1.5;
   color: var(--bs-body-color);
   appearance: none;
-  background-color: var(--bs-body-bg);
+  background-color: transparent;
   background-clip: padding-box;
-  border: var(--bs-border-width) solid var(--bs-border-color);
+  border: var(--bs-border-width) solid var(--bs-primary-changed);
   border-radius: var(--bs-border-radius);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -2233,7 +2234,7 @@ progress {
 }
 .form-control:focus {
   color: var(--bs-body-color);
-  background-color: var(--bs-body-bg);
+  background-color: transparent;
   border-color: rgb(252.5, 222.5, 128.5);
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(250, 190, 2, 0.25);

@@ -17,7 +17,6 @@
     --text-primary-changed:light-dark(var(--primary), white );
 }
 *{
-    transition: all .025s linear;
     &::selection{
         background:var(--primary) ;
         color: white;
@@ -38,6 +37,24 @@
 .btn-outline-primary{
     &:hover {
         color: white;
+    }
+}
+.btn-primary-changed{
+    border: 1px solid var(--text-primary-changed);
+    background: light-dark(white, var(--dark));
+    color: var(--text-primary-changed);
+    padding: .5rem 1rem;
+    transition: .15s linear;
+    &:hover{
+        background: var(--text-primary-changed);
+        color: light-dark(white, var(--dark));
+    }
+    &.active{
+        background: var(--text-primary-changed);
+        color: light-dark(white, var(--dark));
+    }
+    &:active{
+        transform: scale(.98);
     }
 }
 body{
@@ -90,6 +107,7 @@ body{
                         width:fit-content;
                         margin-bottom: 1px;
                         padding: 5px;
+                        color: light-dark( var(--dark) , var(--text-primary-changed) );
                         &.active{
                             color: var(--text-primary-changed);
                             border-bottom: 1px solid ;

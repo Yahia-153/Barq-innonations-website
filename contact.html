@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/scss/custom.css"/>
+    <link rel="stylesheet" href="CSS/Header&Footer.css" />
+    <link rel="stylesheet" href="CSS/contact.css" />
+    <title>Barq Innovations</title>
+  </head>
+  <body>
+    <nav class="navbar p-3 fixed-top mt-4 mx-auto w-75 border d-flex align-items-center " id="navbar">
+      <div class="container container-lg">
+        <a class="navbar-brand" href="#">
+          <img class="mainLogoImg" src="Logos/colored.png">
+        </a>
+        <button class="navbar-toggler rounded-4 border-0 border-none " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+          <div class="container conatiner-fluid  my-2  d-xl-flex align-items-center flex-wrap justify-content-between " id="navLinks">
+            <a class=" nav-link" href="index.html"><i class="bi bi-house me-1"></i>Home</a>
+            <a class=" nav-link" href="about.html"><i class="bi bi-people me-1"></i>About</a>
+            <a class=" nav-link" href="#"><i class="bi bi-gear me-1"></i>Service</a>
+            <a class=" nav-link" href="#"><i class="bi bi-code-slash me-1"></i>Our Work</a>
+            <a class=" nav-link active" href="contact.html"><i class="bi bi-headset me-1"></i>Contact</a>
+            <a class=" nav-link" href="#"><i class="bi bi-person-plus me-1"></i>Internships & Careers</a>
+            <button class=" btn " id="themeSwitchBtn"><i class="bi  fs-4" title="Switch To dark Mood" ></i></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <button type="button" id="toTop" class="btn btn-primary rounded-pill position-fixed bottom-0 end-0 m-5 z-3 shadow d-none" id="backToTop" style="width:clamp(50px , 11dvw, 70px); aspect-ratio: 1/1;">
+      <i class="bi bi-arrow-up text-white fs-2 fw-bold"></i>
+    </button>
+    <div class="contact-section px-5 px-md-6 ">
+        <div class="title mb-5">
+            <h1 class="text-primary text-uppercase">get in touch</h1>
+            <p class="text-info-white lh-base ms-3">Feel free to contact us <br> and we will get back to you as soon as we can.</p>
+        </div>
+        <div class="px-4 row row-cols-md-2 mx-auto row-gap-4 g-md-4 g-lg-5">
+            <div class="col-md-3 ps-0 pe-3">
+                <div class=" sticky-top my-3 mt-3"style="top: 5vh;">
+                    <h3 class="text-primary text-center text-lg-start mb-3">Contact Info</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-white-dark text-info-white fs-6"><i class="text-primary-changed bi bi-geo fs-5 me-1"></i><p class="m-0 d-inline">165 Fouad Street, Al Raml Station, Alexandria, Egypt</p></li>
+                        <li class="list-group-item bg-white-dark text-info-white fs-6"><i class="text-primary-changed bi bi-phone fs-5 me-1"></i><p class="m-0 d-inline">+20 123 456 7890</p></li>
+                        <li class="list-group-item bg-white-dark text-info-white fs-6"><i class="text-primary-changed bi bi-telephone fs-5 me-1"></i><p class="m-0 d-inline">+20 3 1234567</p></li>
+                      </ul>
+                </div>
+            </div>
+            <div class="col-md-9 ">
+                <div class="form-control-btns d-flex flex-wrap column-gap-lg-4 column-gap-md-2   row-gap-3 mb-4 ">
+                    <button class="btn-primary-changed rounded active col-12 col-md-auto" id="qouteFormBtn">Request a quote</button>
+                    <button class="btn-primary-changed rounded col-12 col-md-auto" id="generalFormBtn">General contact</button>
+                </div>
+                <div class="general-form" id="qouteForm">
+                    <form action="" method="post" class="d-grid gap-4">
+                        <div class="row row-cols-1 row-cols-md-2 g-4 g-lg-auto">
+                            <div class="col">
+                                <label for="qouteName" class="form-label ms-3">Name</label>
+                                <input type="text" class="form-control" id="qouteInputName" name="name">        
+                            </div>
+                            <div class="col">
+                                <label for="qoutePhone" class="form-label ms-3">Phone</label>
+                                <input type="number" class="form-control" id="qouteInputPhone" name="phone">        
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="qouteEmail" class="form-label ms-3">Email</label>
+                            <input type="email" class="form-control" id="qouteInputEmail" name="email">        
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-2 g-4 g-lg-auto">
+                            <div class="col">
+                                <label for="qouteCompany" class="form-label ms-3">Company</label>
+                                <input type="text" class="form-control" id="qouteInputCompany" name="company">        
+                            </div>
+                            <div class="col">
+                                <label for="qouteCountry" class="form-label ms-3">Country</label>
+                                <div class="form-select  border-primary-changed rounded bg-white-dark d-flex align-items-center">
+                                  <div class="col-1 country-flag " id="qouteCountryFlag">
+                                  </div>
+                                  <select id="qouteCountriesDropdown" class="col-11 bg-white-dark" name="country" style="border:none; outline:none;">
+                                    <option class="text-info">Select country</option>
+                                </select>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12">
+                          <label for="qouteBudget" class="form-label ms-3">Project Budget</label>
+                          <select name="Qoute Budget" id="" class="form-select bg-white-dark border-primary-changed rounded">
+                            <option value="" class="text-info-white">- Select An Option -</option>
+                            <option value="00 => 10">00.000 - 10,000</option>
+                            <option value="10 => 25">10,000 - 25,000</option>
+                            <option value="25 => 50">25,000 - 50,000</option>
+                          </select>
+                        </div>
+                        <div class="col-12">
+                          <label for="qouteServices" class="form-label ms-3">Required Services</label>
+                          <div class="services row row-cols-1 row-cols-md-2 g-2">
+                            <div class="col">
+                              <input type="checkbox" class="form-check-input bg-white-dark" id="" name="Web Development">
+                              <label for="qoute-Web-Development" class="form-check-label ms-3">Web Development</label>
+                              </div>
+                              <div class="col">
+                                <input type="checkbox" class="form-check-input bg-white-dark" id="" name="Mobile Development">
+                                <label for="qoute-Mobile-Development" class="form-check-label ms-3">Mobile Development</label>
+                              </div>
+                              <div class="col">
+                                <input type="checkbox" class="form-check-input bg-white-dark" id="" name="UI/UX Design">
+                                <label for="qoute-UI/UX-Design" class="form-check-label ms-3">UI/UX Design</label>
+                              </div>
+                              <div class="col">
+                                <input type="checkbox" class="form-check-input bg-white-dark" id="" name="SEO">
+                                <label for="qoute-SEO" class="form-check-label ms-3">SEO</label>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="qouteMessage" class="form-label ms-3">Message</label>
+                            <textarea class="form-control" id="qouteInputMessage" rows="4"></textarea>
+                        </div>
+                        <div class="col-12">
+                          <button type="" class="btn-primary-changed active rounded col-12">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="general-form" id="generalForm" style="display: none;">
+                    <form action="" method="post" class="d-grid gap-4">
+                        <div class="col-12">
+                            <label for="generalName" class="form-label ms-3">Name</label>
+                            <input type="text" class="form-control" id="generalInputEmail" name="email">        
+                        </div>
+                        <div class="col-12">
+                            <label for="generalEmail" class="form-label ms-3">Email</label>
+                            <input type="email" class="form-control" id="generalInputEmail" name="email">        
+                        </div>
+                        <div class="col-12">
+                            <label for="generalSebject" class="form-label ms-3">Sebject</label>
+                            <input type="text" class="form-control" id="generalInputEmail" name="email">        
+                        </div>
+                                                
+                        <div class="col-12">
+                            <label for="generalMessage" class="form-label ms-3">Message</label>
+                            <textarea class="form-control" id="generalInputMessage" name="generalMassage" rows="4"></textarea>
+                        </div>
+                        <div class="col-12">
+                          <button type="" class="btn-primary-changed active rounded col-12">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/contact.js"></script>
+    <script src="JS/Header&Footer.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

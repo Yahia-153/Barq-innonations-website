@@ -22,6 +22,9 @@ function getCountries(){
                 let countryValue = event.target.value;
                 let countryFlag = countryValue.split(' ')[0];
                 console.log(countryFlag);
+                if(countryFlag === 'Select'){
+                    countryFlag = '';
+                }
                 flagPlaceholder.innerText = countryFlag;
             });
             

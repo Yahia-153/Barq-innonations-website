@@ -5,11 +5,5 @@
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "vercel": "^39.3.0"
-  },
-  "name": "barq-server",
-  "version": "1.0.0",
-  "main": "server.js",
-  "scripts": {
-    "start": "npm start"
   }
 }

@@ -1,7 +1,8 @@
 async function fetchTeamData() {
   try {
-        const response = await fetch('http://localhost:3000/');
+        const response = await fetch('../api/team.json');
         return await response.json();
+
     } catch (error) {
         console.error('Error fetching folders:', error);
         return [];

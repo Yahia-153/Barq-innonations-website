@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Logos/icon-colored.png" />
+    <link rel="stylesheet" href="bootstrap/scss/custom.css"/>
+    <link rel="stylesheet" href="CSS/Header&Footer.css" />
+    <title>Barq Innovations</title>
+  </head>
+  <body>
+    <nav class="navbar p-3 fixed-top mt-4 mx-auto w-75 border d-flex align-items-center " id="navbar">
+      <div class="container container-lg">
+        <a class="navbar-brand" href="index.html">
+          <img class="mainLogoImg" src="Logos/colored.png">
+        </a>
+        <button class="navbar-toggler rounded-4 border-0 border-none " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+          <div class="container conatiner-fluid  my-2  d-xl-flex align-items-center flex-wrap justify-content-between " id="navLinks">
+            <a class=" nav-link" href="index.html"><i class="bi bi-house me-1"></i>Home</a>
+            <a class=" nav-link" href="about.html"><i class="bi bi-people me-1"></i>About</a>
+            <a class=" nav-link" href="#"><i class="bi bi-gear me-1"></i>Service</a>
+            <a class=" nav-link active" href="work.html"><i class="bi bi-code-slash me-1"></i>Our Work</a>
+            <a class=" nav-link" href="contact.html"><i class="bi bi-headset me-1"></i>Contact</a>
+            <a class=" nav-link" href="#"><i class="bi bi-person-plus me-1"></i>Internships & Careers</a>
+            <button class=" btn " id="themeSwitchBtn"><i class="bi  fs-4" title="Switch To dark Mood" ></i></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <button type="button" id="toTop" class="btn btn-primary rounded-pill position-fixed bottom-0 end-0 m-5 z-3 shadow d-none" id="backToTop" style="width:clamp(50px , 11dvw, 70px); aspect-ratio: 1/1;">
+      <i class="bi bi-arrow-up text-white fs-2 fw-bold"></i>
+    </button>
+    <script src="JS/Header&Footer.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.js"></script>
+    <script src="JS/projects.js"></script>
+</body>
+</html>

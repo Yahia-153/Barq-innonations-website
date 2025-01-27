@@ -73,9 +73,21 @@ body{
     .mainLogoImg{
         content: url('../Logos/colored.png');
     }
+    .iconLogoImg{
+        content: url('../Logos/icon-colored.png');
+    }
+    .footerLogoImg{
+        content: url('../Logos/icon-white.png');
+    }
     &[data-bs-theme="dark"]{
         .mainLogoImg {
           content: url('../Logos/white.png');
+        }
+        .iconLogoImg{
+            content: url('../Logos/icon-white.png');
+        }
+        .footerLogoImg{
+            content: url('../Logos/icon-dark.png');
         }
     }
     
@@ -120,13 +132,12 @@ body{
             }
         }
     }
-    .footer{
-        background-color: var(--WD);
+    footer{
         .container{
             .row{
                 .col{
-                    .mainLogoImg{
-                        width: 200px;
+                    .footerLogoImg{
+                        height: 150px;
                     }
                 }
             }

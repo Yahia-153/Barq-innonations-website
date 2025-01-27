@@ -15,11 +15,13 @@
     --light: #FFF9E6; 
     --bg-color:light-dark(var(--light) , var(--dark));
     --text-primary-changed:light-dark(var(--primary), white );
+    --selection-bg: light-dark(var(--primary) , white) ;
+    --selection-color: light-dark(white , var(--dark));
 }
 *{
     &::selection{
-        background:var(--primary) ;
-        color: white;
+        background:var(--selection-bg) ;
+        color: var(--selection-color);
     }
 }
 .bg-light-dark{
@@ -34,6 +36,9 @@
 .border-primary-changed{
     border: 1px solid var(--text-primary-changed);
 }
+.bg-primary-changed{
+    background: var(--text-primary-changed);
+}
 .btn-outline-primary{
     &:hover {
         color: white;
@@ -41,7 +46,8 @@
 }
 .btn-primary-changed{
     border: 1px solid var(--text-primary-changed);
-    background: light-dark(white, var(--dark));
+    /* background: light-dark(white, var(--dark)); */
+    background: transparent;
     color: var(--text-primary-changed);
     padding: .5rem 1rem;
     transition: .15s linear;
@@ -53,22 +59,29 @@
         background: var(--text-primary-changed);
         color: light-dark(white, var(--dark));
     }
+    &.fixed{
+        &:hover{
+            color: var(--text-primary-changed);
+            background: transparent; ;
+        }
+    }
     &:active{
         transform: scale(.98);
     }
 }
+.text-primary-changed{
+    color: var(--text-primary-changed);
+}
+.text-info-white{
+    color: light-dark(var(--info), white);
+}
+
 body{
     padding-top: 11rem;
     min-height: 200dvh;
     font-family: 'mochiy'; 
     background-color:light-dark(white, var(--dark));
 
-    .text-primary-changed{
-        color: var(--text-primary-changed);
-    }
-    .text-info-white{
-        color: light-dark(var(--info), white);
-    }
 
     .mainLogoImg{
         content: url('../Logos/colored.png');
@@ -118,7 +131,6 @@ body{
                     .nav-link{
                         width:fit-content;
                         margin-bottom: 1px;
-                        padding: 5px;
                         color: light-dark( var(--dark) , var(--text-primary-changed) );
                         &.active{
                             color: var(--text-primary-changed);

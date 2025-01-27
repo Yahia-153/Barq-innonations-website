@@ -3,10 +3,10 @@
     "catigories":["E-commerce Platform"],
     "links":{
         "googlePlay": "https://play.google.com/store/apps/details?id=com.amazon.mShop.android.shopping",
-        "appStore": "https://apps.apple.com/us/app/amazon-shopping/id297606951",
-        "website": "https://www.amazon.com/"
+        "appStore": "https://apps.apple.com/eg/app/amazon-shopping/id297606951",
+        "website": "https://www.amazon.eg/"
     },
-    "client":"Amazon is the world's largest e-commerce platform, founded to provide a seamless and convenient shopping experience for users. It offers an extensive range of products, including electronics, fashion, books, home appliances, and more.",
+    "client":"Amazon, the world's largest e-commerce platform, offers a seamless shopping experience with diverse products, including electronics, fashion, books, and home appliances.",
     "challenges": [
         "The Amazon app is used by millions of users worldwide, and the challenge was to provide a seamless shopping experience for all users.",
         "The app needed to be user-friendly, fast, and secure to handle the high volume of transactions and traffic.",

@@ -1,0 +1,45 @@
+{
+    "name": "Talabat",
+    "catigories":["Food Delivery Platform"],
+    "links":{
+        "googlePlay": "https://play.google.com/store/apps/details?id=com.talabat",
+        "appStore": "https://apps.apple.com/eg/app/talabat-food-grocery-more/id451001072",
+        "website": "https://www.talabat.com/"
+    },
+    "client":"Talabat, a top Middle Eastern food delivery platform, connects users with diverse restaurants and cuisines, offering convenient, reliable online food ordering and doorstep delivery services.",
+    "challenges": [
+        "Building a scalable and reliable food delivery platform to handle high traffic and order volumes.",
+        "Creating a user-friendly and intuitive interface for customers to browse and order food from various restaurants.",
+        "Ensuring the accuracy and timeliness of food deliveries to maintain customer satisfaction and loyalty.",
+        "Supporting multiple languages, currencies, and payment methods to cater to a diverse customer base."
+    ],
+    "solutions": [
+        "Using cloud-based infrastructure and scalable technologies to handle high traffic and order volumes.",
+        "Designing a responsive and mobile-friendly interface for the platform to provide a seamless ordering experience on all devices.",
+        "Implementing real-time order tracking and notifications to keep customers informed about the status of their deliveries.",
+        "Integrating localization features to support multiple languages, currencies, and payment methods on the platform."
+    ],
+    "features": [
+        "Restaurant search and browsing",
+        "Menu browsing and item selection",
+        "Order placement and payment processing",
+        "Real-time order tracking and notifications",
+        "Customer support",
+        "Rating and reviews",
+        "Wishlist and favorites",
+        "Multi-language support",
+        "Currency conversion",
+        "Integration with third-party delivery services"
+    ],
+    "techStack": [
+        "Node.js",
+        "React",
+        "Redux",
+        "Express",
+        "MongoDB",
+        "Docker",
+        "Kubernetes",
+        "GraphQL",
+        "RESTful APIs"
+    ]
+}

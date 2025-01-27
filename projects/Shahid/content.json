@@ -1,0 +1,40 @@
+{
+    "name": "Shahid",
+    "catigories":["Streaming Platform"],
+    "links": {
+        "googlePlay": "https://play.google.com/store/apps/details?id=com.shahid",
+        "appStore": "https://apps.apple.com/app/shahid/id123456789",
+        "website": "https://www.shahid.net/"
+    },
+    "client": "Shahid, the Middle East's leading streaming platform, offers TV shows, movies, and exclusive content, providing users with a convenient and reliable online viewing experience.",
+    "challenges": [
+        "Building a scalable and reliable streaming platform to handle high traffic and concurrent viewers.",
+        "Creating a user-friendly and intuitive interface for customers to browse and watch content.",
+        "Ensuring the quality and uninterrupted streaming of content to maintain customer satisfaction and loyalty.",
+        "Supporting multiple languages, subtitles, and payment methods to cater to a diverse customer base."
+    ],
+    "solutions": [
+        "Using cloud-based infrastructure and scalable technologies to handle high traffic and concurrent viewers.",
+        "Designing a responsive and mobile-friendly interface for the platform to provide a seamless viewing experience on all devices.",
+        "Implementing adaptive streaming and content delivery networks to ensure high-quality and uninterrupted streaming.",
+        "Integrating localization features to support multiple languages, subtitles, and payment methods on the platform."
+    ],
+    "features": [
+        "Wide range of TV shows, movies, and exclusive content.",
+        "User-friendly interface with personalized recommendations.",
+        "High-quality streaming with adaptive bitrate technology.",
+        "Support for multiple languages and subtitles.",
+        "Secure and diverse payment options."
+    ],
+    "techStack": [
+        "Node.js",
+        "React",
+        "Redux",
+        "Express",
+        "MongoDB",
+        "Docker",
+        "Kubernetes",
+        "GraphQL",
+        "RESTful APIs"
+    ]
+}

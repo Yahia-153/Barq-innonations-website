@@ -1,0 +1,45 @@
+{
+    "name": "Noon",
+    "catigories":["E-commerce Platform"],
+    "links":{
+        "googlePlay": "https://play.google.com/store/apps/details?id=com.noon.buyerapp",
+        "appStore": "https://apps.apple.com/eg/app/noon-shopping-food-grocery/id1269038866",
+        "website": "https://www.noon.com/"
+    },
+    "client":"Noon, a top Middle Eastern e-commerce platform, offers diverse products and services, ensuring a secure, convenient shopping experience with reviews and safe payment options.",
+    "challenges": [
+        "Building a scalable and reliable e-commerce platform to handle high traffic and transaction volumes.",
+        "Creating a user-friendly and intuitive interface for customers to browse and purchase products.",
+        "Ensuring the security and privacy of user data and transactions on the platform.",
+        "Supporting multiple languages, currencies, and payment methods to cater to a diverse customer base."
+    ],
+    "solutions": [
+        "Using cloud-based infrastructure and scalable technologies to handle high traffic and transaction volumes.",
+        "Designing a responsive and mobile-friendly interface for the platform to provide a seamless shopping experience on all devices.",
+        "Implementing secure payment gateways and encryption protocols to protect user data and transactions.",
+        "Integrating localization features to support multiple languages, currencies, and payment methods on the platform."
+    ],
+    "features": [
+        "Product search and browsing",
+        "Product recommendations",
+        "User reviews and ratings",
+        "Secure payment processing",
+        "Order tracking and notifications",
+        "Customer support",
+        "Wishlist and shopping cart",
+        "Multi-language support",
+        "Currency conversion",
+        "Integration with third-party services"
+    ],
+    "techStack": [
+        "Node.js",
+        "React",
+        "Redux",
+        "Express",
+        "MongoDB",
+        "Docker",
+        "Kubernetes",
+        "GraphQL",
+        "RESTful APIs"
+    ]
+}

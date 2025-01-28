@@ -39,6 +39,9 @@
 .bg-primary-changed{
     background: var(--text-primary-changed);
 }
+.bg-primary-WD{
+    background: light-dark( var(--primary) , var(--WD));
+}
 .btn-outline-primary{
     &:hover {
         color: white;
@@ -75,6 +78,9 @@
 .text-info-white{
     color: light-dark(var(--info), white);
 }
+.text-white-dark{
+    color: light-dark(white, var(--dark));
+}
 
 body{
     padding-top: 11rem;
@@ -82,7 +88,13 @@ body{
     font-family: 'mochiy'; 
     background-color:light-dark(white, var(--dark));
 
-
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: var(--primary);
+        border-radius: 10px;
+    }
     .mainLogoImg{
         content: url('../Logos/colored.png');
     }

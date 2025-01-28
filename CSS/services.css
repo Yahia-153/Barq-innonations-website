@@ -1,0 +1,38 @@
+.services-cards , .technologies-cards{
+    display: none;
+    &::-webkit-scrollbar {
+        height:5px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: var(--text-primary-changed);
+        border-radius: 10px;
+    }
+}
+
+#servicesOption , #technologiesOption{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    outline: none;
+}
+#servicesOption::before , #technologiesOption::before{
+    content: "hi";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: light-dark(white, var(--dark));
+    border-bottom: 3px solid transparent;
+    display: grid;
+    place-content: center;
+}
+#servicesOption:checked, #technologiesOption:checked{
+    &::before{
+        border-bottom-color:var(--text-primary-changed);
+    }
+
+}
+#servicesOption:checked ~ .services-cards, #technologiesOption:checked ~ .technologies-cards{
+    display: flex;
+}

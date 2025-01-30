@@ -34,11 +34,28 @@
     <button type="button" id="toTop" class="btn btn-primary rounded-pill position-fixed bottom-0 end-0 m-5 z-3 shadow d-none" id="backToTop" style="width:clamp(50px , 11dvw, 70px); aspect-ratio: 1/1;">
       <i class="bi bi-arrow-up text-white fs-2 fw-bold"></i>
     </button>
-    <div class="services-sec px-3 px-md-5 mb-5" id="services">
+    <div class="hero-sec px-3 px-md-7" style="min-height: 75dvh;">
+      <div class="row row-cols-1 row-cols-md-2 m-0">
+        <div class="col">
+          <h2 class="text-capitalize text-primary-changed fs-1 fw-bold">
+            acheive your business <br> goals with <img class="mainLogoImg m-0" src="Logos/colored.png" style="height: 7rem;">
+          </h2>
+        </div>
+        <div class="col position-relative ">
+          <div class="circle">
+            <div class="text text-primary">
+              <p>- Future -- Innovation -- Technology -- Progress -</p>
+            </div>
+          </div>
+          <img src="imgs/services/hero-dark-dark.png" class="lapMockup w-100 animation-autoShow">
+        </div>
+      </div>
+    </div>
+    <div class="services-sec px-3 px-md-5 mb-5 text-center" id="services">
         <input type="radio" name="SOT" id="servicesOption" checked>
         <input type="radio" name="SOT" id="technologiesOption">
-      <div class="services-cards p-5 pb-4 gap-5 overflow-auto align-items-stretch" >
-        <div class="col-12 col-md-6 col-lg-4 bg-primary-WD p-3 row gap-4 border-primary-changed rounded shadow">
+      <div class="services-cards p-5 pb-4 gap-5 overflow-x-auto align-items-stretch text-start" >
+        <div class="col-12 col-md-6 col-lg-4 bg-primary-WD p-3 row gap-4 border-primary-changed rounded shadow card">
           <div class="icon">
             <i class="bi bi-brush fs-2 text-primary-changed bg-white-dark px-3 border-primary-changed py-1 rounded"></i>
           </div>
@@ -49,7 +66,7 @@
             <p class="text-white">We design websites / apps that are not only visually appealing but also user-friendly and responsive.</p>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4 bg-primary-WD p-3 row gap-4 border-primary-changed rounded shadow">
+        <div class="col-12 col-md-6 col-lg-4 bg-primary-WD p-3 row gap-4 border-primary-changed rounded shadow card">
           <div class="icon">
             <i class="bi bi-window fs-2 text-primary-changed bg-white-dark px-3 border-primary-changed py-1 rounded"></i>
           </div>
@@ -62,7 +79,7 @@
             </p>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4 bg-primary-WD p-3 row gap-4 border-primary-changed rounded shadow">
+        <div class="col-12 col-md-6 col-lg-4 bg-primary-WD p-3 row gap-4 border-primary-changed rounded shadow card">
           <div class="icon">
             <i class="bi bi-phone fs-2 text-primary-changed bg-white-dark px-3 border-primary-changed py-1 rounded"></i>
           </div>
@@ -75,7 +92,7 @@
             </p>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4 bg-primary-WD p-3 row gap-4 border-primary-changed rounded shadow">
+        <div class="col-12 col-md-6 col-lg-4 bg-primary-WD p-3 row gap-4 border-primary-changed rounded shadow card">
           <div class="icon">
             <i class="bi bi-search fs-2 text-primary-changed bg-white-dark px-3 border-primary-changed py-1 rounded"></i>
           </div>
@@ -90,57 +107,53 @@
         </div>
         
       </div>
-      <div class="technologies-cards p-5 pb-4  gap-5 overflow-auto align-items-stretch" >
-        <div class="col-12 col-md-6 col-lg-4 bg-primary-WD p-3 row gap-4 border-primary-changed rounded shadow">
+      <div class="technologies-cards p-5 pb-4  gap-5 overflow-x-auto align-items-stretch text-start" >
+        <div class="col-12 col-md-6 col-lg-4 bg-primary-WD p-3 row gap-4 border-primary-changed rounded shadow card">
           <div class="icon">
-            <i class="bi bi-thermometer-high fs-2 text-primary-changed bg-white-dark px-3 border-primary-changed py-1 rounded"></i>
-          </div>
-          <div class="title">
-            <h3 class="text-white">UI / UX Design</h3>
-          </div>
-          <div class="description">
-            <p class="text-white">We design websites / apps that are not only visually appealing but also user-friendly and responsive.</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 bg-primary-WD p-3 row gap-4 border-primary-changed rounded shadow">
-          <div class="icon">
-            <i class="bi bi-window fs-2 text-primary-changed bg-white-dark px-3 border-primary-changed py-1 rounded"></i>
+            <i class="fa-brands fa-react fs-2 text-primary-changed bg-white-dark px-3 border-primary-changed py-2 rounded"></i>
+            <i class="fa-brands fa-node-js fs-2 text-primary-changed bg-white-dark px-3 border-primary-changed py-2 rounded"></i>
+            <i class="fa-brands fa-bootstrap fs-2 text-primary-changed bg-white-dark px-3 border-primary-changed py-2 rounded"></i>
           </div>
           <div class="title">
             <h3 class="text-white">Web Development</h3>
           </div>
           <div class="description">
-            <p class="text-white">
-              We develop websites that are not only visually appealing but also user-friendly and responsive.
-            </p>
+            <ul class="text-white">
+              <li>React JS</li>
+              <li>Node JS</li>
+              <li>Bootstrap 5</li>
+            </ul>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4 bg-primary-WD p-3 row gap-4 border-primary-changed rounded shadow">
+        <div class="col-12 col-md-6 col-lg-4 bg-primary-WD p-3 row gap-4 border-primary-changed rounded shadow card">
           <div class="icon">
-            <i class="bi bi-phone fs-2 text-primary-changed bg-white-dark px-3 border-primary-changed py-1 rounded"></i>
+            <i class="fa-brands fa-swift fs-2 text-primary-changed bg-white-dark px-3 border-primary-changed py-2 rounded"></i>
+            <i class="fa-brands fa-flutter fs-2 text-primary-changed bg-white-dark px-3 border-primary-changed py-2 rounded"></i>
           </div>
           <div class="title">
             <h3 class="text-white">App Development</h3>
           </div>
           <div class="description">
-            <p class="text-white">
-              We develop mobile applications that are not only visually appealing but also user-friendly and responsive.
-            </p>
+            <ul class="text-white">
+              <li>Swift</li>
+              <li>Flutter</li>
+            </ul>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4 bg-primary-WD p-3 row gap-4 border-primary-changed rounded shadow">
+        <div class="col-12 col-md-6 col-lg-4 bg-primary-WD p-3 row gap-4 border-primary-changed rounded shadow card">
           <div class="icon">
-            <i class="bi bi-search fs-2 text-primary-changed bg-white-dark px-3 border-primary-changed py-1 rounded"></i>
+            <i class="fa-brands fa-figma fs-2 text-primary-changed bg-white-dark px-3 border-primary-changed py-2 rounded"></i>
           </div>
           <div class="title">
-            <h3 class="text-white">SEO Services</h3>
+            <h3 class="text-white">UI / UX Design</h3>
           </div>
           <div class="description">
-            <p class="text-white">
-              We provide SEO services to help you rank higher on search engines and increase your online visibility.
-            </p>
+            <ul class="text-white">
+              <li>Figma</li>
+            </ul>
           </div>
         </div>
+        
         
       </div>
     </div>
@@ -162,7 +175,9 @@
       </div>
     </div>
     <script src="JS/Header&Footer.js"></script>
+    <script src="JS/services.js"></script>
     <script src="bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/6199574a0e.js" crossorigin="anonymous"></script> 
     <script src="JS/projects.js"></script>
 </body>
 </html>

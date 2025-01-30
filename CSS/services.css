@@ -11,19 +11,25 @@
 
 #servicesOption , #technologiesOption{
     position: relative;
-    width: 100px;
+    width: calc(125px + 1rem);
     height: 50px;
     outline: none;
+    margin: 0;
+}
+#servicesOption::before{
+    content: "Services";
+}
+#technologiesOption::before{
+    content: "Technologies";
 }
 #servicesOption::before , #technologiesOption::before{
-    content: "hi";
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    left: -2px;
+    bottom: 0;
+    right: -2px;
     background: light-dark(white, var(--dark));
-    border-bottom: 3px solid transparent;
+    border-bottom: 3px solid light-dark(rgba(250, 190, 2 , .4), rgba(255, 255, 255 , .3));
     display: grid;
     place-content: center;
 }
@@ -35,4 +41,50 @@
 }
 #servicesOption:checked ~ .services-cards, #technologiesOption:checked ~ .technologies-cards{
     display: flex;
+    overflow-y: hidden;
+    .card{
+        animation: scrollShowUpAnimation linear both .5s;
+    }
+}
+.lapMockup{
+    content: url('../imgs/services/hero-dark-dark.png');
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255 , .25));
+    scale: 1.3;
+}
+body[data-bs-theme="dark"] .lapMockup{
+    content: url('../imgs/services/hero-light-light.png');
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    backdrop-filter: blur(1px);
+    z-index: 3;
+    background: rgba(255, 225, 225 , .3);
+    animation: rotate 10s linear infinite;
+    .text{
+        font-size: .75rem;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        p{
+            span{
+                position: absolute;
+                left: 50%;
+                transform-origin: 0 75px;
+            }
+        }
+    }
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
 }

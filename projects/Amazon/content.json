@@ -43,5 +43,6 @@
         "Redux",
         "Jest",
         "Enzyme"
-    ]
+    ],
+    "imagesNum":8
 }

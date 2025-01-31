@@ -1,0 +1,34 @@
+body[data-bs-theme="dark"]{
+    .client-logo{
+        filter: brightness(0) invert(1);
+    }
+}
+ul{
+    list-style-image: url(../Logos/bolt-primary.svg);
+}
+.slider{
+    height: 340px;
+    &::-webkit-scrollbar {
+        height:5px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: var(--primary);
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: var(--primary-dark);
+    }
+    .slider-item{
+        img{
+            height: 100%;
+            width: auto;
+            
+        }
+    }
+}
+@media  (max-width: 768px){
+    .slider{
+        height: 200px;
+        
+    }
+}

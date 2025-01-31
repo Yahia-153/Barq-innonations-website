@@ -57,9 +57,9 @@ const pageTemplte = `
        <div class="slider d-flex overflow-x-auto gap-2 pb-3 " id="imgsPreview">
        </div>
        </div>
-       <div class="position-fixed d-none d-grid top-0 start-0 w-100 h-100 preview-images">
+       <div class="position-fixed d-flex d-none  top-0 start-0 w-100 h-100 preview-images">
        <i class="bi bi-x-lg position-absolute top-0 end-0 m-4 fs-2 fw-bold text-primary" id="closePreview"></i>
-       <img src="${projectPathHTML}/imgs/1.png" alt="" class="w-75 m-auto" id="previewImg">
+       <img src="${projectPathHTML}/imgs/1.png" alt="" class="m-auto" id="previewImg">
        </div>
 `;
 const projectContainer = document.querySelector('#projectContent');
@@ -83,6 +83,13 @@ for(var i = 1 ; i <= projectJson.imagesNum ; i++){
 document.querySelectorAll('.slider-item img').forEach((img) => {
     img.addEventListener("click" , (e) =>{
         console.log(e.currentTarget.src)
+        let aspectRatio = img.naturalWidth / img.naturalHeight;
+        console.log(aspectRatio)
+        if (aspectRatio > 1){
+            document.querySelector('#previewImg').classList.add('w-75');
+        }else{
+            document.querySelector('#previewImg').classList.add('h-75');
+        }
         document.querySelector('#navbar').classList.add('d-none');
         document.querySelector('.preview-images').classList.remove('d-none')
         document.querySelector('#previewImg').src = e.currentTarget.src;
@@ -91,5 +98,6 @@ document.querySelectorAll('.slider-item img').forEach((img) => {
 document.querySelector('#closePreview').addEventListener('click' , () => {
     document.querySelector('#navbar').classList.remove('d-none');
     document.querySelector('.preview-images').classList.add('d-none')
+    document.querySelector('#previewImg').classList.remove('w-75', 'h-75');
 
 })

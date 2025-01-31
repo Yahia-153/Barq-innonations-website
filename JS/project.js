@@ -82,9 +82,7 @@ for(var i = 1 ; i <= projectJson.imagesNum ; i++){
 
 document.querySelectorAll('.slider-item img').forEach((img) => {
     img.addEventListener("click" , (e) =>{
-        console.log(e.currentTarget.src)
         let aspectRatio = img.naturalWidth / img.naturalHeight;
-        console.log(aspectRatio)
         if (aspectRatio > 1){
             document.querySelector('#previewImg').classList.add('w-75');
         }else{

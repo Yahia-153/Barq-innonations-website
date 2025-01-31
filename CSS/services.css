@@ -88,3 +88,9 @@ body[data-bs-theme="dark"] .lapMockup{
     }
     
 }
+@media (max-width:830px) {
+    .circle{
+        top: -20%;
+        left: 20%;
+    }
+}

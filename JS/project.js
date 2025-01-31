@@ -9,7 +9,7 @@ const pageTemplte = `
 <div class="row m-0 row-cols-1 row-cols-lg-2 gap-4 mb-5">
             <div class="d-grid gap-3 ">
                 <h1 class="title text-primary-changed">${projectJson.name}</h1>
-                <div class="row catigories row-cols-3 gap-3" id="catigories">
+                <div class="row catigories gap-3" id="catigories">
 
                 </div>
             </div>
@@ -61,7 +61,7 @@ const pageTemplte = `
 const projectContainer = document.querySelector('#projectContent');
 projectContainer.innerHTML = pageTemplte;
 projectJson.catigories.forEach((catigory ) => {
-    document.querySelector('#catigories').innerHTML+= `<p class="btn-primary-changed fixed text-center p-2  rounded-4 m-0" style="font-size: .75rem;" >${catigory}</p>` ;
+    document.querySelector('#catigories').innerHTML+= `<p class="btn-primary-changed fixed text-center p-2 px-4  rounded-4 m-0 w-auto" style="font-size: .75rem;" >${catigory}</p>` ;
 });
 projectJson.challenges.forEach((challenge) => {
     document.querySelector('#challengesList').innerHTML+= `<li class="mb-3">${challenge}</li>` ;

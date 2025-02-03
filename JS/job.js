@@ -10,7 +10,7 @@ const pageTemplet = `
           <h1 class="text-center text-primary fw-bold fs-1 mb-4">${job.title}</h1>
           <p class="text-center text-info-white fs-5">${job.location} , ${job.type} , ${job.level}</p>
         </div>
-        <div class="container col-10 mx-auto p-4 pt-5">
+        <div class="container col-10 mx-auto p-4 pt-5" id="${job.id}">
           <div class="row row-cols-1 row-cols-md-2 g-4 border-bottom border-1 border-primary mb-4">
               <div class="col col-md-9">
                   <div class="description mb-5">
@@ -33,7 +33,7 @@ const pageTemplet = `
               </div>
               <div class="col col-md-3 ">
                 <div class="content p-3 pt-4 sticky-top">
-                  <a href=""><button class="button-primary rounded active col-12 justify-content-around" style="height: 50px;"><span>Apply Now</span> <i class="bi bi-arrow-up-right ms-2 fw-bold"></i></button></a>
+                  <button class="button-primary rounded active col-12 justify-content-around" style="height: 50px;" onclick="window.scrollTo({top: document.body.scrollHeight})" ><span>Apply Now</span> <i class="bi bi-arrow-up-right ms-2 fw-bold"></i></button>
                   <div class="share p-3">
                     <i class="bi bi-link-45deg fs-4 text-primary fw-bold" style="cursor: pointer;" id="copyBtn"></i>
                   </div>

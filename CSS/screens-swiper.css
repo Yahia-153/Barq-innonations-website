@@ -27,6 +27,25 @@
         @media screen and (max-width: 400px) {
           aspect-ratio: 9 / 20.75;
         }
+        .swiper-wrapper{
+          .swiper-slide{
+            display: flex;
+            align-items: end;
+            background: white;
+            
+            img{
+              width: calc(100% - 15px);
+              height: calc(100% - 20px);
+              border-radius: 0;
+            }
+            &.talabat{
+              background: linear-gradient(to bottom , #FFEEE6 50% , white 50%);
+            }
+            &.shahid{
+              background: linear-gradient(to bottom , black 50% , #1e252f 50%);
+            }
+          }
+        }
       }
       
       .swiper-button-next,

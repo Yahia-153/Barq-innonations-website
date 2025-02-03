@@ -8,3 +8,21 @@ table{
         background-color: transparent !important;
     }
 }
+ul{
+    list-style-image: url(../Logos/bolt-primary.svg);
+
+}
+input[type = "file"]{
+    background-color: transparent !important;
+}
+input[type="file"]::-webkit-file-upload-button {
+    background-color: transparent; 
+    border: none; 
+    padding: 5px 15px; 
+  }
+  
+  input[type="file"]::-moz-file-upload-button {
+    background-color: transparent; 
+    border: none;
+    padding: 5px 15px;
+  }

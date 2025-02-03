@@ -43,3 +43,5 @@ titleInput.addEventListener('input' , filterTable);
 locationInput.addEventListener('change' , filterTable);
 levelInput.addEventListener('change' , filterTable);
 typeInput.addEventListener('change' , filterTable);
+
+export default jobs ;

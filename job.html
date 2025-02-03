@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Logos/icon-colored.png" />
+    <link rel="stylesheet" href="bootstrap/scss/custom.css"/>
+    <link rel="stylesheet" href="CSS/Header&Footer.css" />
+    <link rel="stylesheet" href="CSS/internships&careers.css" />
+    <title>Barq Innovations</title>
+  </head>
+  <body>
+    <nav class="navbar p-3 fixed-top mt-4 mx-auto w-75 border d-flex align-items-center " id="navbar">
+        <div class="container container-lg">
+          <a class="navbar-brand" href="index.html">
+            <img class="mainLogoImg" src="Logos/colored.png">
+          </a>
+          <button class="navbar-toggler rounded-4 border-0 border-none " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <div class="container conatiner-fluid  my-2  d-xl-flex align-items-center flex-wrap justify-content-between text-nowrap" id="navLinks">
+              <a class=" nav-link" href="index.html"><i class="bi bi-house me-1"></i>Home</a>
+              <a class=" nav-link" href="about.html"><i class="bi bi-people me-1"></i>About</a>
+              <a class=" nav-link" href="services.html"><i class="bi bi-gear me-1"></i>Services</a>
+              <a class=" nav-link" href="services.html#projects"><i class="bi bi-code-slash me-1"></i>Portfolio</a>
+              <a class=" nav-link" href="contact.html"><i class="bi bi-headset me-1"></i>Contact</a>
+              <a class=" nav-link active" href="internships&careers.html"><i class="bi bi-person-plus me-1"></i>Internships & Careers</a>
+              <button class=" btn " id="themeSwitchBtn"><i class="bi  fs-4" title="Switch To dark Mood" ></i></button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <button type="button" id="toTop" class="btn btn-primary rounded-pill position-fixed bottom-0 end-0 m-5 z-3 shadow d-none" id="backToTop" style="width:clamp(50px , 11dvw, 70px); aspect-ratio: 1/1;">
+        <i class="bi bi-arrow-up text-white fs-2 fw-bold"></i>
+      </button>
+      <div class="title border-bottom border-1 border-primary pb-5 pt-3 col-10 mx-auto">
+        <h1 class="text-center text-primary fw-bold fs-1 mb-4">Frontend Developer</h1>
+        <p class="text-center text-info-white fs-5">Cairo , Full-Time , Senior</p>
+      </div>
+      <div class="container col-10 mx-auto p-4 pt-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4 border-bottom border-1 border-primary mb-4">
+            <div class="col col-md-9">
+                <div class="description mb-5">
+                    <h2 class=" text-primary fw-bold fs-3 mb-3 text-capitalize">Description</h2>
+                    <p class="fs-6 ps-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem adipisci facere blanditiis quis unde nobis, magni deserunt fugit? Voluptatem quaerat tenetur hic, quia in nobis, officiis molestiae odit quod tempore quisquam itaque saepe illum aliquid ab dolores! Voluptates cupiditate magnam corrupti impedit aspernatur, non possimus numquam facilis ratione! Ipsum, porro.</p>
+                </div>
+                <div class="requirements mb-5">
+                    <h2 class=" text-primary fw-bold fs-3 mb-3 text-capitalize">requirements</h2>
+                    <ul>
+                      <li class="mb-2">Lorem ipsum dolor sit amet.</li>
+                      <li class="mb-2">Lorem ipsum dolor sit amet.</li>
+                      <li class="mb-2">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+                <div class="benefits mb-5">
+                    <h2 class=" text-primary fw-bold fs-3 mb-3 text-capitalize">benefits</h2>
+                    <ul>
+                      <li class="mb-2">Lorem ipsum dolor sit amet.</li>
+                      <li class="mb-2">Lorem ipsum dolor sit amet.</li>
+                      <li class="mb-2">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="col col-md-3 ">
+              <div class="content p-3 pt-4 sticky-top">
+                <button class="button-primary rounded active col-12 justify-content-around" style="height: 50px;"><span>Apply Now</span> <i class="bi bi-arrow-up-right ms-2 fw-bold"></i></button>
+                <div class="share p-3">
+                  <i class="bi bi-share-fill fs-4 text-primary fw-bold" style="cursor: pointer;" id="shareBtn"></i>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="apply-form">
+          <div class="title">
+            <h1 class="text-center text-primary fw-bold fs-1 mb-4">Apply Now</h1>
+          </div>    
+          <form action="" method="post" class="d-grid gap-4">
+            <div class="row row-cols-1 row-cols-md-2 g-4 g-lg-auto">
+                <div class="col">
+                    <label for="qouteName" class="form-label ms-3">Name</label>
+                    <input type="text" class="form-control font-neometric" id="qouteInputName" name="name">        
+                </div>
+                <div class="col">
+                    <label for="qoutePhone" class="form-label ms-3">Phone</label>
+                    <input type="number" class="form-control font-neometric" id="qouteInputPhone" name="phone">        
+                </div>
+            </div>
+            <div class="col-12">
+                <label for="qouteEmail" class="form-label ms-3">Email</label>
+                <input type="email" class="form-control font-neometric" id="qouteInputEmail" name="email">        
+            </div>
+            
+            <div class="col-12">
+              <label class="form-label" for="customFile">Resume</label>
+              <input type="file" class="form-control font-neometric" id="" />            
+            </div>
+            <div class="col-12">
+              <button type="" class="btn-primary-changed active rounded mx-auto">Apply</button>
+            </div>
+        </form>
+        </div>
+      </div>
+
+    <script src="https://kit.fontawesome.com/6199574a0e.js" crossorigin="anonymous"></script>   
+    <script src="JS/Header&Footer.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.js"></script>
+    <script type="module" src="JS/job.js"></script>
+</body>
+</html>

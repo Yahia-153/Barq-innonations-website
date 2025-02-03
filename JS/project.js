@@ -8,7 +8,7 @@ const projectJson = await projectData.json();
 const pageTemplte = `
 <div class="row m-0 row-cols-1 row-cols-lg-2 gap-4 mb-5">
             <div class="d-grid gap-3 ">
-                <h1 class="title text-primary-changed">${projectJson.name}</h1>
+                <h1 class="title text-primary">${projectJson.name}</h1>
                 <div class="row catigories gap-3" id="catigories">
 
                 </div>

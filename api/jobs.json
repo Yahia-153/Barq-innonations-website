@@ -1,0 +1,62 @@
+{
+    "jobsData": [
+      {
+        "id": "v6ovKq",
+        "title": "Frontend Developer",
+        "location": "Cairo",
+        "level": "Senior",
+        "type": "Full-time",
+        "description": "Develop and maintain user interfaces with modern frameworks. Collaborate with designers and backend developers to create seamless user experiences. Optimize web applications for maximum speed and scalability.",
+        "requirements": ["Proficiency in React.js, JavaScript, CSS, and HTML", "Experience with responsive design and cross-browser compatibility", "Familiarity with RESTful APIs and frontend build tools"],
+        "benefits": ["Remote work flexibility", "Comprehensive health insurance", "Flexible working hours", "Opportunities for career growth and skill development"]
+      },
+      {
+        "id": "v4eqLq",
+        "title": "Backend Developer",
+        "location": "Alexandria",
+        "type": "Part-time",
+        "level": "Junior",
+        "description": "Build and optimize server-side applications and APIs. Ensure high performance and responsiveness to requests from the frontend. Maintain and improve database systems for efficiency and security.",
+        "requirements": ["Strong knowledge of Node.js, Express, and MongoDB", "Experience in building RESTful APIs and integrating third-party services", "Ability to write clean and maintainable code with proper documentation"],
+        "benefits": ["Competitive salary and bonuses", "Opportunities for career advancement", "Work from home options", "Access to learning resources and certifications"]
+      },
+      {
+        "id": "gED7Mb",
+        "title": "Mobile Developer",
+        "location": "Hurghada",
+        "type": "Internship",
+        "level": "Mid-Level",
+        "description": "Design and develop mobile applications for multiple platforms. Work closely with UX/UI designers to implement user-friendly interfaces. Test, debug, and enhance mobile applications for better performance.",
+        "requirements": ["Knowledge of Flutter, Dart, and Firebase", "Understanding of mobile application architecture and state management", "Ability to debug and optimize mobile applications for different devices"],
+        "benefits": ["Hands-on experience with real-world projects", "Mentorship from experienced developers", "Flexible schedule and remote work options", "Opportunities to transition into a full-time role"]
+      },
+      {
+        "id": "c5qz8Q",
+        "title": "UI/UX Designer",
+        "location": "Hurghada",
+        "type": "Freelance",
+        "level": "Senior",
+        "description": "Create intuitive and visually appealing user experiences. Conduct user research and usability testing to improve design effectiveness. Develop wireframes, prototypes, and high-fidelity designs.",
+        "requirements": ["Proficiency in Figma, Adobe XD, and other design tools", "Experience in user research and usability testing", "Ability to create visually appealing and user-friendly interfaces"],
+        "benefits": ["Project-based work with creative freedom", "Networking opportunities with industry professionals", "Flexible working hours and remote collaboration", "Competitive compensation per project"]      },
+      {
+        "id": "aSGQ4J",
+        "title": "Marketing Manager",
+        "location": "Alexandria",
+        "type": "Full-time",
+        "level": "Senior",
+        "description": "Develop and implement marketing strategies to increase brand awareness and drive sales. Lead a team of marketing professionals to execute campaigns effectively.",
+        "requirements": ["Proven experience in marketing management", "Strong analytical skills and knowledge of market trends", "Experience with digital marketing and SEO strategies"],
+        "benefits": ["Attractive salary package", "Performance-based bonuses", "Opportunities for career growth and leadership roles"]      },
+      {
+        "id": "2o1t6X",
+        "title": "HR Specialist",
+        "location": "Alexandria",
+        "type": "Full-time",
+        "level": "Junior",
+        "description": "Manage recruitment, employee relations, and performance management processes. Ensure a positive work culture and compliance with labor laws.",
+        "requirements": ["Bachelor’s degree in Human Resources or related field", "Experience in talent acquisition and employee engagement", "Strong knowledge of labor laws and HR best practices"],
+        "benefits": ["Work in a dynamic and collaborative environment", "Professional development and training opportunities", "Health and wellness programs for employees"]      }
+    ]
+  }
+  

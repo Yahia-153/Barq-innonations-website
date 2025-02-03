@@ -1,0 +1,10 @@
+table{
+    background-color: transparent !important;
+    th{
+        background-color: transparent !important;
+
+    }
+    td{
+        background-color: transparent !important;
+    }
+}

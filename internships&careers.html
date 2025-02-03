@@ -6,8 +6,7 @@
     <link rel="icon" href="Logos/icon-colored.png" />
     <link rel="stylesheet" href="bootstrap/scss/custom.css"/>
     <link rel="stylesheet" href="CSS/Header&Footer.css" />
-    <link rel="stylesheet" href="CSS/services.css" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
+    <link rel="stylesheet" href="CSS/internships&careers.css" />
     <title>Barq Innovations</title>
   </head>
   <body>
@@ -20,7 +19,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-          <div class="container conatiner-fluid  my-2  d-xl-flex align-items-center flex-wrap justify-content-between " id="navLinks">
+          <div class="container conatiner-fluid  my-2  d-xl-flex align-items-center flex-wrap justify-content-between text-nowrap" id="navLinks">
             <a class=" nav-link" href="index.html"><i class="bi bi-house me-1"></i>Home</a>
             <a class=" nav-link" href="about.html"><i class="bi bi-people me-1"></i>About</a>
             <a class=" nav-link" href="services.html"><i class="bi bi-gear me-1"></i>Services</a>
@@ -35,24 +34,89 @@
     <button type="button" id="toTop" class="btn btn-primary rounded-pill position-fixed bottom-0 end-0 m-5 z-3 shadow d-none" id="backToTop" style="width:clamp(50px , 11dvw, 70px); aspect-ratio: 1/1;">
       <i class="bi bi-arrow-up text-white fs-2 fw-bold"></i>
     </button>
-    <div class="main">
-      <div class="title text-center mb-4">
-        <h1 class="text-primary text-capitalize">be part of<img class="mainLogo m-0" src="Logos/colored.png" style="height: 5.5rem;"></h1>
+    <div class="main px-4 px-md-5 ">
+      <div class="title text-center mb-6">
+        <h1 class="text-primary text-capitalize">be part of our journey</h1>
         <p  class="text-info-white px-5 mx-auto col-lg-7 ">where innovation meets ambition, and together, we build a smarter, faster, and more connected future</p>
       </div>
       <div class="benefits text-center mb-4">
         <h1 class=" title text-primary text-capitalize">Perks & Benefits</h1>
-        <div class="items p-3 my-3 text-capitalize w-75 mx-auto">
-          <p class="d-inline-flex px-3 py-3 m-2 rounded text-white align-items-center " style="background-color: rgba(250, 190, 2, 0.8); height: 50px;"><i class="fa-regular fa-lightbulb fs-4 me-3"></i> Innovative Environment</p>
-          <p class="d-inline-flex px-3 py-2 m-2 rounded text-white align-items-center " style="background-color: rgba(250, 190, 2, 0.8); height: 50px;"><i class="bi bi-graph-up-arrow fs-3 me-3"></i> Career Growth</p>
-          <p class="d-inline-flex px-3 py-2 m-2 rounded text-white align-items-center " style="background-color: rgba(250, 190, 2, 0.8); height: 50px;"><i class="bi bi-clock fs-4 me-3"></i> Flexible Work</p>
-          <p class="d-inline-flex px-3 py-2 m-2 rounded text-white align-items-center " style="background-color: rgba(250, 190, 2, 0.8); height: 50px;"><i class="bi bi-coin fs-4 me-3"></i> Competitive Compensation</p>
-          <p class="d-inline-flex px-3 py-2 m-2 rounded text-white align-items-center " style="background-color: rgba(250, 190, 2, 0.8); height: 50px;"><i class="fa-regular fa-handshake fs-4 me-3"></i> Supportive Team </p>
+        <div class="items p-3 my-3 text-capitalize col-11 col-md-8 mx-auto">
+          <p class="d-inline-flex px-3 py-3 m-md-2 rounded text-white align-items-center col-12 col-md-auto shadow bg-primary" style="height: 50px;"><i class="fa-regular fa-lightbulb fs-4 me-3"></i><span class="mx-auto">Innovative Environment</span></p>
+          <p class="d-inline-flex px-3 py-2 m-md-2 rounded text-white align-items-center col-12 col-md-auto shadow bg-primary" style="height: 50px;"><i class="bi bi-graph-up-arrow fs-3 me-3"></i><span class="mx-auto">Career Growth</span></p>
+          <p class="d-inline-flex px-3 py-2 m-md-2 rounded text-white align-items-center col-12 col-md-auto shadow bg-primary" style="height: 50px;"><i class="bi bi-clock fs-4 me-3"></i><span class="mx-auto">Flexible Work</span></p>
+          <p class="d-inline-flex px-3 py-2 m-md-2 rounded text-white align-items-center col-12 col-md-auto shadow bg-primary" style="height: 50px;"><i class="bi bi-coin fs-4 me-3"></i><span class="mx-auto">Competitive Compensation</span></p>
+          <p class="d-inline-flex px-3 py-2 m-md-2 rounded text-white align-items-center col-12 col-md-auto shadow bg-primary" style="height: 50px;"><i class="fa-regular fa-handshake fs-4 me-3"></i><span class="mx-auto">Supportive Team</span> </p>
         </div>
       </div>
+      <div class="table-controls">
+        <div class="row row-cols-1 row-cols-md-2 px-md-5 row-gap-3 mb-5">
+          <div class="col">
+            <label for="job-title" class="form-label ms-3">Job Title</label>
+            <input type="text" name="job-title" id="titleInput" class="form-select bg-white-dark border-primary-changed rounded" placeholder="Search . . .">
+          </div>
+          <div class="col">
+            <label for="location" class="form-label ms-3">Location</label>
+            <select name="location" id="locationInput" class="form-select bg-white-dark border-primary-changed rounded">
+              <option value="" class="text-info-white">- Select Location -</option>
+              <option value="Cairo">Cairo</option>
+              <option value="Alexandria">Alexandria</option>
+              <option value="Hurgada">Hurgada</option>
+            </select>
+          </div>
+          
+          <div class="col">
+            <label for="level" class="form-label ms-3">Level</label>
+            <select name="level" id="levelInput" class="form-select bg-white-dark border-primary-changed rounded">
+              <option value="" class="text-info-white">- Select level -</option>
+              <option value="Junior">Junior</option>
+              <option value="Mid-Level">Mid-Level</option>
+              <option value="Senior">Senior</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="type" class="form-label ms-3">type</label>
+            <select name="type" id="typeInput" class="form-select bg-white-dark border-primary-changed rounded">
+              <option value="" class="text-info-white">- Select type -</option>
+              <option value="Full-time">Full-time</option>
+              <option value="Part-time">Part-time</option>
+              <option value="Internship">Internship</option>
+              <option value="Freelance">Freelance</option>
+            </select>
+          </div>
+          
+        </div>
+      </div>
+      <div class="job-table container container-lg">
+        <div class="table-responsive">
+        <table class="table table-hover mt-3 mb-5" >
+        <thead class="border-primary">
+          <tr class=" text-nowrap">
+            <th scope="col" class="ps-3 py-3">Job Title</th>
+            <th scope="col" class="py-3">Level</th>
+            <th scope="col" class="py-3">Location</th>
+            <th scope="col" class="py-3">Job Type</th>
+            <th scope="col" class="pe-3 py-3"></th>
+          </tr>
+        </thead>
+        <tbody class="font-neometric" id="jobsBody">
+          <!-- <tr class=" text-nowrap">
+            <td class="ps-4 py-3">Front end developer</td>
+            <td class="py-3">Senior</td>
+            <td class="py-3">Alexandria</td>
+            <td class="py-3">Full-Time</td>
+            <td class="py-2 text-center"><button class="btn-primary-changed rounded active" id="qouteFormBtn">Apply <i class="bi bi-arrow-up-right ms-2 fw-bold"></i></button></td>
+          </tr> -->
+        </tbody>
+          </table>
+        </div>
+      </div>
+      
     </div>
+    
     <script src="https://kit.fontawesome.com/6199574a0e.js" crossorigin="anonymous"></script>   
     <script src="JS/Header&Footer.js"></script>
     <script src="bootstrap/dist/js/bootstrap.js"></script>
+    <script type="module" src="JS/internships&careers.js"></script>
 </body>
 </html>

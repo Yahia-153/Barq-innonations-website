@@ -1,6 +1,7 @@
 @import '../bootstrap-icons/font/bootstrap-icons.css';
 @import 'animations.css'; /* Animations */
 @import '../Fonts/Mochiy/Mochiy.css' ; /* Fonts */
+@import '../Fonts/neometric/style.css' ; /* Fonts */
 :root{
     /* WD = White & Dark Transfare */
     --WD:light-dark(/*rgba(3, 18, 43 ,.01)*/rgba(255, 255, 255, .5), rgba(255, 255, 255, .4));
@@ -23,6 +24,9 @@
         background:var(--selection-bg) ;
         color: var(--selection-color);
     }
+}
+.font-neometric{
+    font-family: 'Neometric Regular';
 }
 .bg-light-dark{
     background: light-dark(var(--light), var(--dark));
@@ -65,6 +69,30 @@
     &.fixed{
         &:hover{
             color: var(--text-primary-changed);
+            background: transparent; ;
+        }
+    }
+    &:active{
+        transform: scale(.98);
+    }
+}
+.button-primary{
+    border: 1px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+    padding: .5rem 1rem;
+    transition: .15s linear;
+    &:hover{
+        background: var(--primary);
+        color: white;
+    }
+    &.active{
+        background: var(--primary);
+        color: white;
+    }
+    &.fixed{
+        &:hover{
+            color: var(--primary);
             background: transparent; ;
         }
     }

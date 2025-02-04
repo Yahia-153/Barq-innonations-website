@@ -56,7 +56,10 @@
                     <button class="btn-primary-changed rounded col-12 col-md-auto" id="generalFormBtn">General contact</button>
                 </div>
                 <div class="general-form" id="qouteForm">
-                    <form action="" method="post" class="d-grid gap-4">
+                    <form action="https://formsubmit.co/barq.innovations@gmail.com" method="POST" class="d-grid gap-4">
+                      <input type="hidden" name="_subject" value="New qoute contact !">
+                      <input type="hidden" name="_captcha" value="false">
+                      <input type="hidden" name="_template" value="table">
                         <div class="row row-cols-1 row-cols-md-2 g-4 g-lg-auto">
                             <div class="col">
                                 <label for="qouteName" class="form-label ms-3">Name</label>
@@ -120,15 +123,18 @@
                         </div>
                         <div class="col-12">
                             <label for="qouteMessage" class="form-label ms-3">Message</label>
-                            <textarea class="form-control font-neometric" id="qouteInputMessage" rows="4"></textarea>
+                            <textarea class="form-control font-neometric" name="Qoute_Message" id="qouteInputMessage" rows="4"></textarea>
                         </div>
                         <div class="col-12">
-                          <button type="" class="btn-primary-changed active rounded col-12">Send Message</button>
+                          <button type="submit" class="btn-primary-changed active rounded col-12">Send Message</button>
                         </div>
                     </form>
                 </div>
                 <div class="general-form" id="generalForm" style="display: none;">
-                    <form action="" method="post" class="d-grid gap-4">
+                    <form action="https://formsubmit.co/barq,innovations@gmail.com" method="POST" class="d-grid gap-4">
+                      <input type="hidden" name="_subject" value="New general contact !">
+                      <input type="hidden" name="_template" value="table">
+                      <input type="hidden" name="_captcha" value="false">
                         <div class="col-12">
                             <label for="generalName" class="form-label ms-3">Name</label>
                             <input type="text" class="form-control font-neometric" id="generalInputEmail" name="email">        
@@ -144,10 +150,10 @@
                                                 
                         <div class="col-12">
                             <label for="generalMessage" class="form-label ms-3">Message</label>
-                            <textarea class="form-control font-neometric" id="generalInputMessage" name="generalMassage" rows="4"></textarea>
+                            <textarea class="form-control font-neometric" id="generalInputMessage" name="General_Massage" rows="4"></textarea>
                         </div>
                         <div class="col-12">
-                          <button type="" class="btn-primary-changed active rounded col-12">Send Message</button>
+                          <button type="submit" class="btn-primary-changed active rounded col-12">Send Message</button>
                         </div>
                     </form>
                 </div>

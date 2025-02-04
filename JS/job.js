@@ -44,8 +44,11 @@ const pageTemplet = `
             <div class="title">
               <h1 class="text-center text-primary fw-bold fs-1 mb-4">Apply Now</h1>
             </div>    
-            <form action="" method="post" class="d-grid gap-4">
+            <form action="https://formsubmit.co/barq.innovations@gmail.com" method="POST" class="d-grid gap-4" enctype="multipart/form-data">
               <div class="row row-cols-1 row-cols-md-2 g-4 g-lg-auto">
+              <input type="hidden" name="_captcha" value="false"> 
+              <input type="hidden" name="_subject" value="New job applyment !">
+              <input type="hidden" name="_template" value="table">
               <input type="hidden" name="ID" value="${job.id}">
               <input type="hidden" name="Title" value="${job.title}">
               <input type="hidden" name="Location" value="${job.location}">
@@ -67,10 +70,10 @@ const pageTemplet = `
               
               <div class="col-12">
                 <label class="form-label" for="customFile">Resume</label>
-                <input type="file" class="form-control font-neometric" id="" />            
+                <input type="file" class="form-control font-neometric" name="Resume" />            
               </div>
               <div class="col-12">
-                <button type="" class="btn-primary-changed active rounded mx-auto">Apply</button>
+                <button type="submit" class="btn-primary-changed active rounded mx-auto">Apply</button>
               </div>
           </form>
           </div>

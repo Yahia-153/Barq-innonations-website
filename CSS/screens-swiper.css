@@ -1,6 +1,5 @@
 .screens-sec {
     overflow: hidden;
-
     .mobile-screens {
       display: flex;
       align-items: center;
@@ -100,4 +99,3 @@
       }
     }
   }
-  

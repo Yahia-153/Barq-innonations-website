@@ -32,7 +32,6 @@ fetchTeamData()
             </div>
           </div>
     `
-    console.log(memberCard);
     teamCardsSection.innerHTML += memberCard;
   });
 });

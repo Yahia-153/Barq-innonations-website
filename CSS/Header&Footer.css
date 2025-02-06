@@ -4,7 +4,7 @@
 @import '../Fonts/neometric/style.css' ; /* Fonts */
 :root{
     /* WD = White & Dark Transfare */
-    --WD:light-dark(/*rgba(3, 18, 43 ,.01)*/rgba(255, 255, 255, .5), rgba(255, 255, 255, .4));
+    --WD:light-dark(/*rgba(3, 18, 43 ,.01)*/rgba(255, 255, 255, .5), rgba(255, 255, 255, .2));
     --main-font: 'Neometric Regular'; 
     --primary: #FABE02;    
     --success: #2E8B57;      

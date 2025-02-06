@@ -63,7 +63,7 @@ body[data-bs-theme="dark"] .lapMockup{
     border-radius: 50%;
     backdrop-filter: blur(1px);
     z-index: 3;
-    background: rgba(255, 225, 225 , .3);
+    background: rgba(255, 225, 225 , .2);
     animation: rotate 10s linear infinite;
     .text{
         font-size: .75rem;

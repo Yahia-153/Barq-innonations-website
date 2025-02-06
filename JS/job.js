@@ -87,4 +87,4 @@ const pageTemplet = `
     navigator.clipboard.writeText(pageUrl)
         .then(() => alert("🔗 Link copied to clipboard!"))
         .catch(err => console.error("Failed to copy:", err));
-});
+});غ
